@@ -39,8 +39,11 @@ class FileCache
         self::filePath($path);
 
         $filename = $path. $key;
-        if(is_file($filename)) {
-            $data = @unserialize(file_get_contents($filename));
+        if(is_file($filename.'.php')) {
+            $str = file_get_contents($filename.'.php');
+            $str =str_replace('<?php exit(); ?>',"", $str);
+
+            $data = @unserialize($str);
 
             if($data['time']){
                 if($data['time'] > time()){
@@ -63,7 +66,7 @@ class FileCache
      * @param $value
      * @param int $time
      */
-    public static function set($key, $value, int $time = 0) {
+    public static function set($key, $value = null, int $time = 0) {
         $path = self::$path;
 
         self::filePath($path);
@@ -77,8 +80,11 @@ class FileCache
 
         $filename = $path . $key;
 
+        $str = "<?php exit(); ?>";
+        $str .= serialize($data);
+
         if(isset($value)) {
-            file_put_contents($filename, serialize($data));
+            file_put_contents($filename.'.php', $str);
         } else {
             @unlink($filename);
         }
