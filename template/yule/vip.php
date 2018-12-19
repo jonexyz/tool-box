@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: jone
- * Date: 18-12-16
- * Time: 下午9:08
+ * Date: 18-12-19
+ * Time: 下午20:47
  */
 ?>
 
@@ -18,8 +18,7 @@
     .ft16{font-size:16px}
     .vtitle{word-break:break-all}
     .banner{margin:16px 0;}
-    .banner img{height:30px;margin-top:-4px}
-    .banner a{font-family:fantasy;text-decoration:none;color:dodgerblue;}
+    .banner h3{font-family:fantasy;text-decoration:none;color:dodgerblue;}
     .bold{font-weight:bold;}
     .breakall{word-break:break-all;}
     .mg320{margin:32px 0;}
@@ -56,7 +55,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="banner" id="top">
-                    <h3><a href="/"><img src="/static/images/m3u8.png"> M3U8 Player Online</a></h3>
+                    <h3>免费在线VIP视频解析</h3>
                     <!-- <h1><a href="/"><img src="/static/logo.png?v=0b9a95c2a548a41826206b4ecff9e6c2"></a> <span class="ft16 mob hidden-xs">m3u8在线播放器 m3u8 player support both PC and Mobile</span></h1> -->
                 </div>
                 <form action="" method="GET" >
@@ -72,8 +71,7 @@
                     </div><!-- /input-group -->
                 </form>
                 <div class="text-center">
-                    <video id="video" controls="controls" autoplay="autoplay"
-                           poster="http://freefrontend.com/assets/img/css-loaders/cube-flipping-loader.gif"></video>
+                    <video id="video" controls="controls" autoplay="autoplay" poster="http://freefrontend.com/assets/img/css-loaders/cube-flipping-loader.gif"></video>
                 </div>
                 <div class="alert alert-info text-center vtitle" role="alert"><b>正在播放!</b>
                     https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8
@@ -81,11 +79,10 @@
 
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <p><strong>M3U8</strong>文件是指UTF-8编码格式的M3U文件。M3U文件是记录了一个索引纯文本文件，打开它时播放软件并不是播放它，而是根据它的索引找到对应的音视频文件的网络地址进行在线播放。
-                        </p>
-                        <p><strong>M3U</strong>是一种播放多媒体列表的文件格式，它的设计初衷是为了播放音频文件，比如MP3，但是越来越多的软件现在用来播放视频文件列表，M3U也可以指定在线流媒体音频源。很多播放器和软件都支持M3U文件格式。
-                        </p>
-
+                        <button>腾讯视频</button>
+                        <button>腾讯视频</button>
+                        <button>腾讯视频</button>
+                        <button>腾讯视频</button>
                     </div>
                 </div>
 
@@ -106,9 +103,7 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script type="text/javascript" src="/static/js/m3u8play.js?v=74b4c09fcd6e74ab82eb02a08c88b338"></script>
-<script type="text/javascript">m3u8play("https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8")</script>
+
 
 <!-- 锚点平滑移动 -->
 <?php  get_temp('footer_js.php') ?>

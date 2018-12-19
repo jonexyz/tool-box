@@ -37,18 +37,18 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="/yule/video.html"  class="smooth">
+                        <a href="/yule/video.html#top"  class="smooth">
                             <span class="title">M3U8在线播放器</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/yule/vip.html#top" class="smooth">
+                            <span class="title">VIP视频解析</span>
                         </a>
                     </li>
                     <li>
                         <a href="/yule/mima.html" class="smooth">
                             <span class="title">随机密码生成器</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#界面灵感" class="smooth">
-                            <span class="title">获取本机IP</span>
                         </a>
                     </li>
                     <li>
