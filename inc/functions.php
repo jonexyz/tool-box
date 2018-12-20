@@ -42,3 +42,32 @@ function get_temp($tmp){
         require(ROOT.'/template/base/'.$tmp);
     }
 }
+
+/**
+ * 获取当前的域名+url
+ * @param bool $type  true则获取完整url ,false 只获取http+主机域名
+ * @return string
+ */
+function get_url($type=false)
+{
+    $http_type = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') || (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https')) ? 'https://' : 'http://';
+    if($type){
+        return $http_type . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    }
+    return $http_type . $_SERVER['HTTP_HOST'] ;
+}
+
+
+// bt种子转磁力链接操作
+function BDecode($wholefile) {
+    $decoder = new BDecode;
+    $return = $decoder->decodeEntry($wholefile);
+    return $return[0];
+}
+
+function BEncode($array) {
+    $string = '';
+    $encoder = new BEncode;
+    $encoder->decideEncode($array, $string);
+    return $string;
+}

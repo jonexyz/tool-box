@@ -42,3 +42,53 @@
 <script src="/static/js/xenon-toggles.js"></script>
 <!-- JavaScripts initializations and stuff -->
 <script src="/static/js/xenon-custom.js"></script>
+
+<script>
+
+    // 获取当前相对路径的方法
+    // 首先获取 Url，然后把 Url 通过
+    // 截成两部分，再从后一部分中截取相对路径。如果截取到的相对路径中有参数，则把参数去掉。
+    function GetUrlRelativePath(url = false)
+    {
+       if(!url) var url = document.location.toString();
+       if(url=='javascript:void(0)') {
+           return 'javascript:void(0)';
+       }
+
+        var arrUrl = url.split("//");
+
+        var start = arrUrl[1].indexOf("/");
+        var relUrl = arrUrl[1].substring(start);//stop省略，截取从start开始到结尾的所有字符
+
+        if(relUrl.indexOf("?") != -1){
+            relUrl = relUrl.split("?")[0];
+        }
+        return relUrl;
+    }
+
+    $('#main-menu a').each(function (i) {
+
+        $(this).parent().removeClass('active');
+
+        if(GetUrlRelativePath(this.href) == GetUrlRelativePath() && GetUrlRelativePath(this.href) != '/' ){
+
+            $(this).parent().addClass('active');
+
+            $(this).parent().parent().css('display', 'block')
+
+            //console.log($(this));
+
+            //console.log(this.href);
+
+            //console.log(GetUrlRelativePath(this.href));
+
+        }else {
+            if(i==0 && GetUrlRelativePath() == '/' ){
+                console.log($(this));
+                $(this).parent().addClass('active');
+            }
+        }
+    })
+
+    //console.log($('#main-menu a'));
+</script>
