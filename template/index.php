@@ -10,7 +10,12 @@
 <!doctype html>
 <html lang="en">
 
-    <?php define('TITLE','首页'); get_temp('header.php') ?>
+    <?php define('TITLE','126工具箱'); get_temp('header.php') ?>
+
+    <style>
+        .banner h3{font-family:fantasy;text-decoration:none;color:dodgerblue;}
+
+    </style>
 
     <body class="page-body">
     <!-- skin-white -->
@@ -21,14 +26,18 @@
         <div class="main-content">
             <?php get_temp('nav_top.php') ?>
 
-            <!-- 常用推荐 -->
-            <h4 style="text-align: center">关于本站</h4>
+            <!-- 主体内容 -->
             <div class="row" >
-            <div class="col-md-12" style="background-color: #c73a3a;height: 350px;"></div>
+            <div class="col-md-12" >
+                <div class="banner" id="top">
+                    <h3>标题</h3>
+                </div>
+
 
             </div>
+            </div>
             <br />
-            <!-- END 常用推荐 -->
+            <!-- END 主体内容 -->
 
 
             <?php  get_temp('footer.php') ?>

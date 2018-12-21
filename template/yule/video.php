@@ -11,7 +11,7 @@
 <!doctype html>
 <html lang="en">
 
-<?php define('TITLE','首页'); get_temp('header.php') ?>
+<?php define('TITLE','M3U8在线播放器-126工具箱'); get_temp('header.php') ?>
 
 <style>
     #video{width:100%;margin:16px 0;}
@@ -52,7 +52,6 @@
     <div class="main-content">
         <?php get_temp('nav_top.php') ?>
 
-        <!-- 常用推荐 -->
         <div class="row">
             <div class="col-md-12">
                 <div class="banner" id="top">

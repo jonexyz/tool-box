@@ -8,6 +8,7 @@
  * Time: 下午12:27
  */
 
+//error_reporting(0);
 
 // 定义根目录
 const ROOT = __DIR__;

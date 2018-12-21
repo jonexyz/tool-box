@@ -10,9 +10,16 @@
 <!doctype html>
 <html lang="en">
 
-    <?php define('TITLE','首页'); get_temp('header.php') ?>
+    <?php define('TITLE','在线密码生成器-126工具箱'); get_temp('header.php') ?>
 
     <style>
+        .banner h3{
+            font-family:fantasy;
+            text-decoration:none;
+            color:dodgerblue;
+            text-align: center
+        }
+
         #main {
             max-width: 400px;
             margin: 0 auto;
@@ -73,8 +80,11 @@
             <!-- 常用推荐 -->
             <div class="row">
                 <div class="col-md-12">
+                    <div class="banner" id="top">
+                        <h3>在线密码生成器</h3>
+                    </div>
+
                     <div >
-                        <div style="text-align: center"><h3>在线密码生成器</h3></div>
                         <form id="main" class="pure-form">
                             <ul>
                                 <li><label><input type="checkbox" name="include_number" checked/><span>数字</span></label>
@@ -100,7 +110,7 @@
                             <button type="button" id="generate" class="btn btn-primary">
                                 生成密码
                             </button>
-                            <textarea name="output" class="pure-input-1" cols="45" rows="7" readonly></textarea>
+                            <textarea name="output" class="pure-input-1" cols="50" rows="7" readonly></textarea>
                         </form>
                     </div>
                 </div>

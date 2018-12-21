@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="DesignStack" />
     <meta name="author" content="viggo" />
-    <title>工具箱 - 设计师网址导航</title>
+    <title><?=TITLE?></title>
     <meta name="keywords" content="工具箱">
     <meta name="description" content="工具箱">
     <link rel="shortcut icon" href="/static/images/favicon.png">

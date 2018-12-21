@@ -33,7 +33,7 @@
             <li>
                 <a href="javascript:void(0)">
                     <i class="linecons-lightbulb"></i>
-                    <span class="title">常用工具</span>
+                    <span class="title">影音娱乐</span>
                 </a>
                 <ul>
                     <li>
@@ -46,33 +46,26 @@
                             <span class="title">VIP视频解析</span>
                         </a>
                     </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="linecons-lightbulb"></i>
+                    <span class="title">常用工具</span>
+                </a>
+                <ul>
                     <li>
-                        <a href="<?= get_url() ?>/yule/mima.html" class="smooth">
+                        <a href="<?= get_url() ?>/always/mima.html" class="smooth">
                             <span class="title">随机密码生成器</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?= get_url() ?>" class="smooth">
+                        <a href="<?= get_url() ?>/always/duanwangzhi.html" class="smooth">
                             <span class="title">百度短连接</span>
-                            <span class="label label-pink pull-right hidden-collapsed">Hot</span>
+                        <!-- <span class="label label-pink pull-right hidden-collapsed">Hot</span>-->
                         </a>
                     </li>
-                    <li>
-                        <a href="/yule/bt2cili.html" class="smooth">
-                            <span class="title">BT种子转磁力链接</span>
-                            <!-- <span class="label label-pink pull-right hidden-collapsed">Hot</span> -->
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a href="#动效设计" class="smooth">
-                            <span class="title">动效设计</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#电商平台" class="smooth">
-                            <span class="title">电商平台</span>
-                        </a>
-                    </li> -->
                 </ul>
             </li>
 
@@ -92,35 +85,24 @@
                             <span class="title">域名信息查询</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="<?= get_url() ?>" class="smooth">
-                            <span class="title">网页灵感</span>
-                            <span class="label label-pink pull-right hidden-collapsed">Hot</span>
-                        </a>
-                    </li>
                 </ul>
             </li>
+
 
             <li>
                 <a href="javascript:void(0)">
                     <i class="linecons-lightbulb"></i>
-                    <span class="title">JSON工具</span>
+                    <span class="title">开发工具</span>
                 </a>
                 <ul>
                     <li>
-                        <a href="<?= get_url() ?>" class="smooth">
-                            <span class="title">域名备案查询</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?= get_url() ?>" class="smooth">
-                            <span class="title">界面灵感</span>
+                        <a href="javascript:void(0)" class="smooth">
+                            <span class="title">在线正则表达式测试</span>
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)" class="smooth">
-                            <span class="title">网页灵感</span>
-                            <span class="label label-pink pull-right hidden-collapsed">Hot</span>
+                            <span class="title">JSON</span>
                         </a>
                     </li>
                 </ul>
@@ -134,18 +116,7 @@
                 <ul>
                     <li>
                         <a href="javascript:void(0)" class="smooth">
-                            <span class="title">域名备案查询</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="smooth">
-                            <span class="title">界面灵感</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" class="smooth">
-                            <span class="title">网页灵感</span>
-                            <span class="label label-pink pull-right hidden-collapsed">Hot</span>
+                            <span class="title">Escape加密解密</span>
                         </a>
                     </li>
                 </ul>

@@ -58,16 +58,17 @@ function get_url($type=false)
 }
 
 
-// bt种子转磁力链接操作
-function BDecode($wholefile) {
-    $decoder = new BDecode;
-    $return = $decoder->decodeEntry($wholefile);
-    return $return[0];
-}
 
-function BEncode($array) {
-    $string = '';
-    $encoder = new BEncode;
-    $encoder->decideEncode($array, $string);
-    return $string;
+/**
+ * 是否是GET提交的
+ */
+function isGet(){
+    return isset($_SERVER['REQUEST_METHOD']) && strtoupper($_SERVER['REQUEST_METHOD'])=='GET';
+}
+/**
+ * 是否是POST提交
+ * @return int
+ */
+function isPost() {
+    return isset($_SERVER['REQUEST_METHOD']) && strtoupper($_SERVER['REQUEST_METHOD'])=='POST';
 }
