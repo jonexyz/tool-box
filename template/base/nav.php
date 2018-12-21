@@ -119,6 +119,21 @@
                             <span class="title">Escape加密解密</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="javascript:void(0)" class="smooth">
+                            <span class="title">Base64加密解密</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="smooth">
+                            <span class="title">URL编码解码</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="smooth">
+                            <span class="title">RSA、RSA2加密解密</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
         </ul>
