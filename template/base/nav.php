@@ -46,11 +46,11 @@
                             <span class="title">VIP视频解析</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="<?= get_url() ?>/yule/zibo.html?#top" class="smooth">
+                   <!-- <li>
+                        <a href="<?/*= get_url() */?>/yule/zibo.html?#top" class="smooth">
                             <span class="title">电视直播</span>
                         </a>
-                    </li>
+                    </li>-->
                 </ul>
             </li>
 
@@ -70,6 +70,12 @@
                             <span class="title">百度短连接</span>
                         <!-- <span class="label label-pink pull-right hidden-collapsed">Hot</span>-->
                         </a>
+                    </li>
+                    <!--<li>
+                        <a href="<?/*= get_url() */?>/always/qrcode.html" class="smooth">
+                            <span class="title">生成二维码</span>
+                            <!-- <span class="label label-pink pull-right hidden-collapsed">Hot</span>-->
+                        </a>-->
                     </li>
                 </ul>
             </li>
