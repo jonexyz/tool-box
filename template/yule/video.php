@@ -107,7 +107,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <script type="text/javascript" src="/static/js/m3u8play.js?v=74b4c09fcd6e74ab82eb02a08c88b338"></script>
-<script type="text/javascript">m3u8play("https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8")</script>
+<script type="text/javascript"><?php if(!empty(trim($_GET['play']))){ ?> m3u8play("<?=trim($_GET['play']) ?>" <?php } ?>)</script>
 
 <!-- 锚点平滑移动 -->
 <?php  get_temp('footer_js.php') ?>
