@@ -81,8 +81,7 @@
             <div class="col-md-12" >
 
                 <div class="banner" id="top">
-                    <h3>M3U8 Player Online</h3>
-                    <!-- <h1><a href="/"><img src="/static/logo.png?v=0b9a95c2a548a41826206b4ecff9e6c2"></a> <span class="ft16 mob hidden-xs">m3u8在线播放器 m3u8 player support both PC and Mobile</span></h1> -->
+                    <h3>在线VIP视频解析</h3>
                 </div>
 
                 <script>
@@ -187,21 +186,6 @@
                             </div>
                         </ul>
                     </div>
-
-                <div class="container">
-                    <div id="footer">
-                        <p class="text-center">Copyright © 2018 - <a href=""
-                                                                     target="_blank">极客</a> Corporation,All Rights
-                            Reserved
-                        </p>
-                        <p class="text-center">本站提供的最新电影和电视剧资源均系收集于各大视频网站,本站只提供web页面服务,并不提供影片资源存储,也不参与录制、上传<br/>
-                            若本站收录的节目无意侵犯了贵司版权，请给网页底部邮箱地址来信,我们会及时处理和回复,谢谢。<br/>
-                            管理员邮箱：<a href="mailto:377873042@qq.com">377873042@qq.com</a>
-                        </p>
-                    </div>
-                </div>
-
-
 
             </div>
         </div>

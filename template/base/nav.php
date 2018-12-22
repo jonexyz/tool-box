@@ -46,6 +46,11 @@
                             <span class="title">VIP视频解析</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="<?= get_url() ?>/yule/zibo.html?#top" class="smooth">
+                            <span class="title">电视直播</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
 
