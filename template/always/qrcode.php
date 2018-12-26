@@ -1,11 +1,19 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: jone
- * Date: 18-12-21
- * Time: 上午 10:26
+ * User: Jone
+ * Date: 2018-12-26
+ * Time: 11:09
  */
 
+
+//调用查看结果
+if (empty($_GET['url'])) {
+    $url = NULL;
+} else {
+    $url = trim($_GET['url']);
+    $file = get_url() . '/qrcode.php?url=' . $url;
+}
 
 
 ?>
@@ -13,7 +21,7 @@
 <!doctype html>
 <html lang="en">
 
-<?php define('TITLE','短网址生成工具-126工具箱'); get_temp('header.php') ?>
+<?php define('TITLE','126工具箱'); get_temp('header.php') ?>
 
 <style>
     .banner h3{
@@ -97,10 +105,7 @@
         text-align: left;
         line-height: 30px;
         font-size: 20px;
-        background-color: #bbdde2;
         padding: 5px;
-        border: 1px solid #40add6;
-        display: none;
         color: #117342
     }
 
@@ -124,19 +129,27 @@
         <!-- 主体内容 -->
         <div class="row" >
             <div class="col-md-12" >
+
                 <div class="banner" id="top">
-                    <h3>百度短网址生成工具</h3>
+                    <h3>二维码在线生成</h3>
                 </div>
 
                 <div class="lin-block-content">
                     <div class="tools-div">
-                        <h3 class="tools-h3">输入你要简化的URL网址:</h3>
-                        <textarea class="tools-textarea" name="long_url"></textarea>
-                        <input type="button" class="form_btn blue" onClick="input_search()" value="压缩网址"/>
-                        <span style="color:#555;font-size:12px;">短网址实例：http://dwz.cn/asLbQf</span>
-                        <div class="tools-result"></div>
-<!--                        <img class="tools-loading" src="/Public/images/loading.gif">-->
+                        <h3 class="tools-h3">输入你要生成二维码的内容:</h3>
 
+                        <form method="get" >
+                            <textarea class="tools-textarea" name="url" ><?=$url?></textarea>
+
+                            <input type="submit" class="form_btn blue"  value="生成二维码"/>
+                        </form>
+
+
+                        <div class="tools-result">
+                            <?php if(! empty($file)){ ?>
+                                <img src="<?=$file?>">
+                            <?php } ?>
+                        </div>
 
                     </div>
 
@@ -164,61 +177,6 @@
 </div>
 <!-- 锚点平滑移动 -->
 <?php  get_temp('footer_js.php') ?>
-
-<script type="text/javascript" src="/static/js/layer/layer.js"></script>
-<script type="text/javascript">
-    var input_search = function(){
-        var input_val = $("textarea[name='long_url']").val().trim();
-        if(input_val == ''){
-            layer.msg('请输入URL网址。', {icon: 5});
-            return false;
-        }
-        //alert(encodeURIComponent(input_val));
-        submit_url( input_val );
-
-    }
-
-
-
-    var submit_url = function (long_url ){
-
-        var index = layer.load(0, {time: 10*1000});
-
-        var ajax = new XMLHttpRequest();
-        var token = 'd746848a4b0b5241da7528ee5723574c';
-        var longUrl = long_url;
-
-        ajax.open('post','https://dwz.cn/admin/v2/create', 'true');
-
-        ajax.setRequestHeader("Content-Type", "application/json");
-        ajax.setRequestHeader("Token", token);
-
-        // 发送请求
-        ajax.send(JSON.stringify({
-            url: longUrl
-        }));
-
-        ajax.onreadystatechange = function () {
-            if (ajax.readyState === 4 && ajax.status === 200) {
-                // 获取缩短后的网址
-                var data = JSON.parse(ajax.responseText);
-                console.log(data)
-                if(data.Code=="0"){
-                    $(".tools-result").html(data.ShortUrl);
-                    $(".tools-result").show();
-                }else{
-                    $(".tools-result").html(data.ErrMsg);
-                    $(".tools-result").show();
-                }
-                layer.close(index);
-            }else {
-                layer.close(index);
-                //$("#error_msg").html("请确认您的网址是否正确...");
-            }
-        }
-    }
-
-</script>
 
 </body>
 

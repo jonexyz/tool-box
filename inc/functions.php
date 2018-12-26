@@ -72,3 +72,4 @@ function isGet(){
 function isPost() {
     return isset($_SERVER['REQUEST_METHOD']) && strtoupper($_SERVER['REQUEST_METHOD'])=='POST';
 }
+

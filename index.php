@@ -14,6 +14,7 @@
 const ROOT = __DIR__;
 
 require_once 'config.php';
+
 require_once './inc/functions.php';
 
 

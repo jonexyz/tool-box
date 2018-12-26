@@ -9,7 +9,7 @@
                 <i class="fa-bars"></i>
             </a>
         </li>
-        <li class="dropdown hover-line language-switcher">
+        <!--<li class="dropdown hover-line language-switcher">
            <a href="../cn/index.html" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="/static/images/flags/flag-cn.png" alt="flag-cn" /> Chinese
             </a>
@@ -25,7 +25,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li>-->
     </ul>
 
 </nav>

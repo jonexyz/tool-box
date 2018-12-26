@@ -71,11 +71,10 @@
                         <!-- <span class="label label-pink pull-right hidden-collapsed">Hot</span>-->
                         </a>
                     </li>
-                    <!--<li>
+                    <li>
                         <a href="<?/*= get_url() */?>/always/qrcode.html" class="smooth">
                             <span class="title">生成二维码</span>
-                            <!-- <span class="label label-pink pull-right hidden-collapsed">Hot</span>-->
-                        </a>-->
+                        </a>
                     </li>
                 </ul>
             </li>
@@ -87,12 +86,12 @@
                 </a>
                 <ul>
                     <li>
-                        <a href="<?= get_url() ?>" class="smooth">
+                        <a href="<?= get_url() ?>/zhanzhang/beian.html" class="smooth">
                             <span class="title">域名备案查询</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?= get_url() ?>" class="smooth">
+                        <a href="<?= get_url() ?>/zhanzhang/whois.html" class="smooth">
                             <span class="title">域名信息查询</span>
                         </a>
                     </li>
