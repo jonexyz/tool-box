@@ -53,14 +53,14 @@
 
     .lin-block-content {
         padding: 6px 10px;
-        position: relative;
+        /*position: relative;*/
     }
 
     /** tools css*/
     .tools-div {
         margin: 0;
         width: 60%;
-        background-color: #FFF;
+        /*background-color: #FFF;*/
         padding: 20px 10px;
         text-align: left;
     }
@@ -83,7 +83,7 @@
     }
 
     .tools-textarea {
-        width: 90%;
+        width: 100%;
         height: 60px;
         border: 1px solid #40add6;
         margin: 10px 0 30px 0;
@@ -92,7 +92,7 @@
     }
 
     .tools-result {
-        width: 50%;
+        /*min-width: 50%;*/
         margin: 20px 0;
         text-align: left;
         line-height: 30px;
