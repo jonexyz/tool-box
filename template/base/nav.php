@@ -72,7 +72,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="<?/*= get_url() */?>/always/qrcode.html" class="smooth">
+                        <a href="<?= get_url() ?>/always/qrcode.html" class="smooth">
                             <span class="title">生成二维码</span>
                         </a>
                     </li>
