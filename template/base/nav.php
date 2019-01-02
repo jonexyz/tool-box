@@ -79,25 +79,24 @@
                 </ul>
             </li>
 
-            <li>
+          <!--  <li>
                 <a href="javascript:void(0)">
                     <i class="linecons-lightbulb"></i>
                     <span class="title">站长工具</span>
                 </a>
                 <ul>
                     <li>
-                        <a href="<?= get_url() ?>/zhanzhang/beian.html" class="smooth">
+                        <a href="<?/*= get_url() */?>/zhanzhang/beian.html" class="smooth">
                             <span class="title">域名备案查询</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?= get_url() ?>/zhanzhang/whois.html" class="smooth">
+                        <a href="<?/*= get_url() */?>/zhanzhang/whois.html" class="smooth">
                             <span class="title">域名信息查询</span>
                         </a>
                     </li>
                 </ul>
             </li>
-
 
             <li>
                 <a href="javascript:void(0)">
@@ -145,7 +144,7 @@
                         </a>
                     </li>
                 </ul>
-            </li>
+            </li>-->
         </ul>
     </div>
 </div>

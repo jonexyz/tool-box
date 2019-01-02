@@ -5,6 +5,12 @@
  * Date: 18-12-16
  * Time: 下午9:08
  */
+
+if(empty($_GET['play'])){
+    $play = '';
+}else{
+    $play = trim($_GET['play']);
+}
 ?>
 
 
@@ -61,7 +67,7 @@
                 <form action="" method="GET" >
                     <div class="input-group">
                         <input type="text" class="form-control"
-                               value="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8" name="play" required>
+                               value="<?=$play?>" name="play" required>
                         <a href="javascript:;" class="remove"><span class="glyphicon glyphicon-remove"
                                                                     aria-hidden="true"></span></a>
                         <span class="input-group-btn">
@@ -75,7 +81,7 @@
                            poster="http://freefrontend.com/assets/img/css-loaders/cube-flipping-loader.gif"></video>
                 </div>
                 <div class="alert alert-info text-center vtitle" role="alert"><b>正在播放!</b>
-                    https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8
+                    <?=$play?>
                 </div>
 
                 <div class="panel panel-default">
